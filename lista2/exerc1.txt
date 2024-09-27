@@ -1,0 +1,11 @@
+a = int(input("Qual a medida do lado A: "))
+b = int(input("Qual a medida do lado B: "))
+c = int(input("Qual a medida do lado C: "))
+if a + b < c or b + c < a or a + c < b:
+    print("Não é um triângulo!")
+elif a == b == c:
+    print("É um triângulo equilátero!")
+elif a == b != c:
+    print("É um triângulo isóceles!")
+elif a != b != c:
+    print("É um triângulo escaleno!")

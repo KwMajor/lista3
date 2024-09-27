@@ -1,0 +1,85 @@
+1.
+a = int(input("Qual a medida do lado A: "))
+b = int(input("Qual a medida do lado B: "))
+c = int(input("Qual a medida do lado C: "))
+if a + b < c or b + c < a or a + c < b:
+    print("Não é um triângulo!")
+elif a == b == c:
+    print("É um triângulo equilátero!")
+elif a == b != c:
+    print("É um triângulo isóceles!")
+elif a != b != c:
+    print("É um triângulo escaleno!")
+
+2.
+ano = int(input('Ano: '))
+if (ano%4==0 and ano%100!=0) or (ano%400==0):
+    print('Bissexto')
+else:
+    print('Não é bissexto')
+
+3.
+peixes = float(input("Quantos quilos de peixe você está levando: "))
+ppeixe = (peixes - 50)
+mpeixe = (peixes - 50) * 4
+if peixes > 50:
+    print(f"Você está levando {ppeixe:.2f}KG de peixe acima do limite, você foi multado no valor de R${mpeixe:.2f}")
+else:
+    ppeixe = 0
+    mpeixe = 0
+    print("Você está dentro do limite de peso!")
+
+4.
+n1 = float(input("Digite um número: "))
+n2 = float(input("Digite um número: "))
+n3 = float(input("Digite um número: "))
+maior = n1
+if n2 > maior:
+    maior = n2
+if n3 > maior:
+    maior = n3
+print(f"O maior número é: {maior}")
+
+5.
+n1 = float(input("Digite um número: "))
+n2 = float(input("Digite um número: "))
+n3 = float(input("Digite um número: "))
+maior = n1
+menor = n1
+if n2 < menor:
+    menor = n2
+if n3 < menor:
+    menor = n3
+if n2 > maior:
+    maior = n2
+if n3 > maior:
+    maior = n3
+print(f"O maior número é: {maior}")
+print(f"O menor número é: {menor}")
+
+6.
+shora = float(input("Quanto você ganha por hora: "))
+horast = float(input("Quantas horas você trabalhou: "))
+diast = int(input("Quantos dias você trabalhou: "))
+imprenda = 11
+salariobruto = (shora * horast) * diast
+ir = (imprenda /100) * salariobruto
+inss = 8
+inssf = (inss /100) * salariobruto
+sindicato = 5
+sindicatof = (sindicato /100) * salariobruto
+salarioliq = salariobruto - ir - inssf - sindicatof
+print(f"Salário bruto R$ {salariobruto:.2f}\nIR R$ {ir:.2f} \nINSS R$ {inssf:.2f}\nSindicato R$ {sindicatof:.2f}\nSalario liquido R$ {salarioliq:.2f}")
+
+7.
+import math
+
+area = int(input("Digite o tamanho da area pintada: "))
+litroarea = area / 3
+litrolata = 18
+quantlata = math.ceil(litroarea / litrolata)
+precolata = 80
+precototal = quantlata * precolata
+
+print(f"Você precisara de {quantlata} latas de tinta!")
+print(f"O preço total das tintas é de R$ {precototal:.2f}")

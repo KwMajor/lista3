@@ -1,0 +1,13 @@
+shora = float(input("Quanto você ganha por hora: "))
+horast = float(input("Quantas horas você trabalhou: "))
+diast = int(input("Quantos dias você trabalhou: "))
+imprenda = 11
+salariobruto = (shora * horast) * diast
+ir = (imprenda /100) * salariobruto
+inss = 8
+inssf = (inss /100) * salariobruto
+sindicato = 5
+sindicatof = (sindicato /100) * salariobruto
+salarioliq = salariobruto - ir - inssf - sindicatof
+print(f"Salário bruto R$ {salariobruto:.2f}\nIR R$ {ir:.2f} \nINSS R$ {inssf:.2f}\nSindicato R$ {sindicatof:.2f}\nSalario liquido R$ {salarioliq:.2f}")
+ 

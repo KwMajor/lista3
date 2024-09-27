@@ -1,0 +1,11 @@
+import math
+
+area = int(input("Digite o tamanho da area pintada: "))
+litroarea = area / 3
+litrolata = 18
+quantlata = math.ceil(litroarea / litrolata)
+precolata = 80
+precototal = quantlata * precolata
+
+print(f"Você precisara de {quantlata} latas de tinta!")
+print(f"O preço total das tintas é de R$ {precototal:.2f}")
