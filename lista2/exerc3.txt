@@ -1,0 +1,9 @@
+peixes = float(input("Quantos quilos de peixe você está levando: "))
+ppeixe = (peixes - 50)
+mpeixe = (peixes - 50) * 4
+if peixes > 50:
+    print(f"Você está levando {ppeixe:.2f}KG de peixe acima do limite, você foi multado no valor de R${mpeixe:.2f}")
+else:
+    ppeixe = 0
+    mpeixe = 0
+    print("Você está dentro do limite de peso!")

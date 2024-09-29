@@ -1,0 +1,1 @@
+print('2 elevado a 1 milhão tem %d dígitos' % len(str(2**1000000)))
