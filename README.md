@@ -1,0 +1,1 @@
+Listas de exercícios das aulas de lógica de programação do professor Fernando Masanori.
