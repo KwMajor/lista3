@@ -1,0 +1,43 @@
+1.
+n = int(input("numero: "))
+while n < 0 or n > 10:
+    print("erro")
+    n = int(input("numero: "))
+print(f"você digitou {n}")
+
+2.
+usuario = str(input("usuario: "))
+senha = str(input("senha: "))
+while usuario == senha:
+    print("erro")
+    usuario = str(input("usuario"))
+    senha = str(input("senha"))
+print("usuario e senha correto!")
+
+3.
+a = 80000
+b = 200000
+npa = 0.03
+npb = 0.015
+anos = 0
+while a < b:
+    a = a + (a * npa)
+    b = b + (b * npb)
+    anos += 1
+print(f"a população A vai ultrapassar a população B em {anos} anos!")
+
+4.
+n = int(input("N: "))
+a, b = 1, 1
+k = 1
+while k <= n-2:
+    a, b = b, a + b
+    k = k + 1
+print(b)
+
+5.
+n1 = int(input("N: "))
+n2 = int(input("N: "))
+while n1 % n2 !=0:
+    n1, n2 = n2, n1 % n2
+print(n2)
